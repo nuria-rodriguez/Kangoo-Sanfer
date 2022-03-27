@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        /*nav {
+      background: #262627;
+      fill: #262627;
+    }*/
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #flecha {
+            transition: 0.4s ease-in-out;
+        }
+
+        #flecha:hover {
+            transform: translateY(-10px);
+        }
+
+        h3 {
+            font-family: inherit;
+            font-weight: 700;
+
+        }
+
+        #icon {
+            width: 50px;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        body {
+            font-family: Arial, calibri;
+        }
+
+        #arrow {
+            transition: 0.4s ease-in-out;
+        }
+
+        #arrow:hover {
+            transform: translateY(-10px);
+        }
+
+        nav {
+            font-weight: 900;
+            font-family: Courier New;
+            /*font-size: 3vh;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="arriba"></div>
+
+  <!-- <div style="background-image: url(../imagenes/fondot5.jpg); background-size: 100% ; background-repeat: no-repeat;"> -->
+  
+      <div style="background-image: url(../imagenes/fondot5.jpg); background-size: 100%; background-repeat: no-repeat; ">
+        <nav class="navbar navbar-expand-md navbar-light bg-transparent ">
+            <img class="mt-1 ml-2" src="../imagenes/logo2.png" style="filter: invert(1);">
+
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link " href="tarifas.html">Tarifas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="calendario.html">Calendario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="registro.html">Registrarse</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="d-flex justify-content-center align-items-center" style="height: 50vh;">
+            <div class="">
+                <h3 style="font-weight: bold;background-color: rgba(0,0,0,0.4);
+        " class="text-center text-white display-4 ">Tarifas</h3>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mb-5 ">
+        <h3 class="text-center mt-5 mb-3">Escoge tu plan</h3>
+        <hr style="background-color: #549393; width: 14%;height:2.5px; margin: auto;" class="border-0 mb-4">
+        <p class="text-justify text-center mb-5">Están a disposición cualquiera de estos planes, puede elegir cualquier
+            el que más le guste pero le recomendamos que pruebe nuestros entrenamientos por sí mismo para ver cual se
+            adapta mejor a ti antes de decantarse por uno.</p>
+
+
+        <div class="card-group row">
+
+
+            <div class="col-md-4">
+                <div class="  card-body text-center">
+                    <h2>Básico </h2>
+                    <h3>27.99€ / Mes</h3>
+                    <hr class="mt-3 mb-3 text-danger border-0 w-50 mx-auto" style="height: 1px;">
+                    <p class="">Este plan es perfecto si estás comenzando tus entrenamientos.</p>
+                    <ul class="list-group-flush pr-4">
+                        <li class="list-group-item pr-4">Acceso completo</li>
+                        <li class="list-group-item pr-4">Spinning</li>
+                        <li class="list-group-item pr-4">Acceso sala fitness</li>
+                        <li class="list-group-item pr-4 disabled">Crossfit</li>
+                        <li class="list-group-item pr-4 disabled">Sauna</li>
+                        <li class="list-group-item pr-4 disabled ">Entrenador Personal</li>
+                    </ul>
+                    <!-- <div class="card-footer bg-white border-0"> -->
+                    <button class="ml-2 btn btn-success btn-block">Comprar</button>
+                    <!-- </div> -->
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4 ">
+                <div style="box-shadow: 0 5px 23px 0 rgb(0 0 0 / 15%);
+
+" class=" card-body text-center">
+                    <h2>Premium </h2>
+                    <h3>38.99€ / Mes</h3>
+                    <hr class="mt-3 mb-3 text-danger border-0 w-50 mx-auto mr-4" style="height: 1px;">
+                    <p class="">Este plan ofrece accesos que el plan básico no ofrece.</p>
+                    <ul class="list-group-flush pr-4  ">
+                        <li class=" list-group-item pr-4 ">Acceso completo</li>
+                        <li class="list-group-item pr-4">Spinning</li>
+                        <li class="list-group-item pr-4">Acceso sala fitness</li>
+                        <li class="list-group-item pr-4">Crossfit</li>
+                        <li class="list-group-item pr-4 disabled ">Sauna</li>
+                        <li class="list-group-item pr-4 disabled">Entrenador Personal</li>
+                    </ul>
+                    <button class=" btn btn-danger btn-block">Comprar</button>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+                <div class=" card-body text-center">
+                    <h2>Pro</h2>
+                    <h3>49.99€ / Mes</h3>
+                    <hr class="mt-3 mb-3 text-danger border-0 w-50 mx-auto" style="height: 1px;">
+                    <p class="">Este plan es perfecto si eres adicto al gimnasio y caprichos</p>
+                    <ul class="list-group-flush pr-4">
+                        <li class="list-group-item pr-4">Acceso completo</li>
+                        <li class="list-group-item pr-4">Spinning</li>
+                        <li class="list-group-item pr-4">Acceso sala fitness</li>
+                        <li class="list-group-item pr-4">Crossfit</li>
+                        <li class="list-group-item pr-4 ">Sauna</li>
+                        <li class="list-group-item pr-4 ">Entrenador Personal</li>
+
+                    </ul>
+                    <button class="ml-2 btn btn-warning btn-block">Comprar</button>
+
+                </div>
+                <!-- <div class="card-footer bg-white border-0"> -->
+                <!-- </div> -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="float-right" style="position: relative;">
+        <div class=" text-right  mr-4 mt-4 " id="flecha">
+            <a href="#arriba"><img src="../imagenes/flecha.png" alt="flecha"></a>
+        </div>
+    </div>
+    <footer class="text-center   text-lg-start text-white " style="background-color:#549393 ;">
+        <div class="container p-4 ">
+            <div class="row">
+
+                <div class="col-md-6  mt-3">
+                    <h6 class="text-uppercase  font-weight-bold p-0 m-0">Contacto</h6>
+                    <hr style="height:1px; margin: auto;" class="bg-white mb-4 w-25 mt-3">
+                    <div class="text-left d-inline-block">
+                        <p><img src="../imagenes/casa.png" class="btn ">C\ Fuero de Avilés,
+                            Asturias</p>
+                        <p><img src="../imagenes/gmail.png" class="btn ">kangoosanfer@gmail.com</p>
+                        <p><img src="../imagenes/iphone.png" class="btn ">+34 654 231 123</p>
+
+                    </div>
+                </div>
+
+                <hr style="height:1px; margin: auto;" class="bg-white mb-4 w-100 mt-3 d-md-none">
+
+                <div class="col-md-6 mx-auto mt-3">
+                    <h6 class="text-uppercase font-weight-bold">Redes Sociales</h6>
+                    <hr style="height:1px; margin: auto;" class="bg-white mb-4 w-25 mt-3">
+                    <div class=" mx-auto pt-4">
+                        <img src="../imagenes/whatsapp1.png" class="btn ">
+                        <img src="../imagenes/instagram.png" class="btn ">
+                        <img src="../imagenes/facebook.png" class="btn">
+                    </div>
+                    <div class="mx-auto pt-4">
+                        <img src="../imagenes/twitter.png" class="btn ">
+                        <img src="../imagenes/linkedin.png" class="btn ">
+                        <img src="../imagenes/youtube.png" class="btn">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
